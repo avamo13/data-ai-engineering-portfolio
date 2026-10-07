@@ -49,6 +49,7 @@ The emphasis is not only on obtaining a good metric, but on understanding **why 
 | Project | Problem | Main Focus |
 |---|---|---|
 | [YearPredictionMSD](./deep-learning/01_yearpredictionmsd_pytorch/) | Neural Regression | PyTorch, MLPs, training ablations, AdamW, BatchNorm, auxiliary pretraining, fine-tuning, Optuna |
+| [Household Energy Forecasting](./deep-learning/02_household_energy_rnn_forecasting/) | Time-Series Forecasting | PyTorch, RNN/LSTM/GRU, chronological validation, sliding windows, multi-horizon forecasting |
 
 ---
 
@@ -142,7 +143,7 @@ The classical machine-learning projects cover several different modeling setting
 
 The deep-learning section focuses on implementing and understanding neural-network training with **PyTorch** rather than treating training as a black-box `.fit()` operation.
 
-The current project covers:
+The current projects cover:
 
 - tensors and GPU-aware data pipelines;
 - custom `Dataset` and `DataLoader`;
@@ -160,6 +161,10 @@ The current project covers:
 - fine-tuning;
 - hyperparameter optimization with Optuna;
 - checkpointing;
+- recurrent neural networks (RNN, LSTM, GRU);
+- chronological time-series validation;
+- sliding-window sequence modeling;
+- multi-horizon forecasting;
 - residual and distribution-level error analysis.
 
 → [`deep-learning/`](./deep-learning/)
@@ -189,7 +194,8 @@ data-ai-engineering-portfolio/
 │   └── 05_online_retail_customer_segmentation/
 │
 ├── deep-learning/
-│   └── 01_yearpredictionmsd_pytorch/
+│   ├── 01_yearpredictionmsd_pytorch/
+│   └── 02_household_energy_rnn_forecasting/
 │
 └── README.md
 ```
