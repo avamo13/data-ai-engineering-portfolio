@@ -1,0 +1,17 @@
+[
+  {
+    "query": "How does LoRA decompose parameter updates into low-rank matrices?"
+  },
+  {
+    "query": "How does FlashAttention reduce memory traffic with IO-aware tiling?"
+  },
+  {
+    "query": "How does the selective state-space mechanism in Mamba work?"
+  },
+  {
+    "query": "What contrastive objective is used to train CLIP?"
+  },
+  {
+    "query": "What optimizer and exact training dataset were used for GPT-4?"
+  }
+]

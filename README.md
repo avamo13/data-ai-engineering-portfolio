@@ -2,7 +2,7 @@
 
 # DATA · AI · ENGINEERING
 
-### Applied Machine Learning · Deep Learning · Scientific Computing
+### Applied Machine Learning · Deep Learning · Generative AI · Scientific Computing
 
 `models → experiments → validation → analysis → reproducible systems`
 
@@ -50,6 +50,12 @@ The emphasis is not only on obtaining a good metric, but on understanding **why 
 |---|---|---|
 | [YearPredictionMSD](./deep-learning/01_yearpredictionmsd_pytorch/) | Neural Regression | PyTorch, MLPs, training ablations, AdamW, BatchNorm, auxiliary pretraining, fine-tuning, Optuna |
 | [Household Energy Forecasting](./deep-learning/02_household_energy_rnn_forecasting/) | Time-Series Forecasting | PyTorch, RNN/LSTM/GRU, chronological validation, sliding windows, multi-horizon forecasting |
+
+### Generative AI
+
+| Project | Problem | Main Focus |
+|---|---|---|
+| [RAG Research Assistant](./generative-ai/01_rag_research_assistant/) | Retrieval-Augmented Generation | Dense + BM25 retrieval, RRF, cross-encoder reranking, Qdrant, grounded generation, retrieval evaluation |
 
 ---
 
@@ -171,11 +177,36 @@ The current projects cover:
 
 ---
 
+## Generative AI
+
+The generative-AI section focuses on building and evaluating systems around foundation models rather than treating the LLM call as the entire application.
+
+The current project covers:
+
+- PDF ingestion and source metadata;
+- token-aware chunking;
+- dense semantic retrieval;
+- BM25 sparse retrieval;
+- local vector search with Qdrant;
+- hybrid retrieval with Reciprocal Rank Fusion;
+- cross-encoder reranking;
+- context expansion;
+- grounded generation;
+- metadata-based citations;
+- retrieval benchmarks and holdout evaluation;
+- out-of-corpus abstention;
+- RAG failure analysis;
+- API cost tracking.
+
+→ [`generative-ai/`](./generative-ai/)
+
+---
+
 ## Technical Stack
 
 <div align="center">
 
-`Python` · `NumPy` · `Pandas` · `SciPy` · `scikit-learn` · `PyTorch` · `Optuna` · `Matplotlib` · `Git`
+`Python` · `NumPy` · `Pandas` · `SciPy` · `scikit-learn` · `PyTorch` · `Optuna` · `LangChain` · `Qdrant` · `FastEmbed` · `OpenAI API` · `Matplotlib` · `Git`
 
 </div>
 
@@ -196,6 +227,9 @@ data-ai-engineering-portfolio/
 ├── deep-learning/
 │   ├── 01_yearpredictionmsd_pytorch/
 │   └── 02_household_energy_rnn_forecasting/
+│
+├── generative-ai/
+│   └── 01_rag_research_assistant/
 │
 └── README.md
 ```

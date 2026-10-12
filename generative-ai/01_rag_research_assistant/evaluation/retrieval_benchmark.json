@@ -1,0 +1,150 @@
+[
+  {
+    "query": "What mechanism lets the Transformer model dependencies without recurrence or convolution?",
+    "expected_source_ids": [
+      "transformer"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "What pretraining objectives are introduced in BERT?",
+    "expected_source_ids": [
+      "bert"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "Why is vanilla BERT inefficient for large-scale semantic similarity search, and how does SBERT address this?",
+    "expected_source_ids": [
+      "sbert"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "How are the question encoder and passage encoder trained in Dense Passage Retrieval?",
+    "expected_source_ids": [
+      "dpr"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "What is late interaction in ColBERT?",
+    "expected_source_ids": [
+      "colbert"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "How does RAG combine parametric memory and non-parametric memory?",
+    "expected_source_ids": [
+      "rag"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "How does Fusion-in-Decoder combine evidence from multiple retrieved passages?",
+    "expected_source_ids": [
+      "fid"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "What does HyDE generate before retrieval, and why does this help zero-shot dense retrieval?",
+    "expected_source_ids": [
+      "hyde"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "What position-related failure is identified in Lost in the Middle?",
+    "expected_source_ids": [
+      "lost_middle"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "What role do reflection tokens play in Self-RAG?",
+    "expected_source_ids": [
+      "self_rag"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "How does RAFT use relevant documents and distractor documents during training?",
+    "expected_source_ids": [
+      "raft"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "Compare DPR's bi-encoder retrieval with ColBERT's late-interaction retrieval.",
+    "expected_source_ids": [
+      "dpr",
+      "colbert"
+    ],
+    "type": "multi_source"
+  },
+  {
+    "query": "How do RAG and Fusion-in-Decoder differ in the way retrieved passages are used by the generator?",
+    "expected_source_ids": [
+      "rag",
+      "fid"
+    ],
+    "type": "multi_source"
+  },
+  {
+    "query": "What computational advantage do SBERT and DPR obtain by encoding texts independently?",
+    "expected_source_ids": [
+      "sbert",
+      "dpr"
+    ],
+    "type": "multi_source"
+  },
+  {
+    "query": "How does HyDE differ from a supervised dense retriever such as DPR?",
+    "expected_source_ids": [
+      "hyde",
+      "dpr"
+    ],
+    "type": "multi_source"
+  },
+  {
+    "query": "Why can adding more context fail to improve question answering even if the relevant evidence is present?",
+    "expected_source_ids": [
+      "lost_middle"
+    ],
+    "type": "single_source"
+  },
+  {
+    "query": "How does Self-RAG make retrieval more adaptive than the original RAG formulation?",
+    "expected_source_ids": [
+      "self_rag",
+      "rag"
+    ],
+    "type": "multi_source"
+  },
+  {
+    "query": "How is the Transformer encoder architecture related to BERT?",
+    "expected_source_ids": [
+      "transformer",
+      "bert"
+    ],
+    "type": "multi_source"
+  },
+  {
+    "query": "How does ColBERT preserve more token-level matching information than a single-vector sentence representation such as SBERT?",
+    "expected_source_ids": [
+      "colbert",
+      "sbert"
+    ],
+    "type": "multi_source"
+  },
+  {
+    "query": "Contrast RAFT and Self-RAG as two approaches for improving retrieval-augmented systems.",
+    "expected_source_ids": [
+      "raft",
+      "self_rag"
+    ],
+    "type": "multi_source"
+  }
+]
