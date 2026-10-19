@@ -56,6 +56,7 @@ The emphasis is not only on obtaining a good metric, but on understanding **why 
 | Project | Problem | Main Focus |
 |---|---|---|
 | [RAG Research Assistant](./generative-ai/01_rag_research_assistant/) | Retrieval-Augmented Generation | Dense + BM25 retrieval, RRF, cross-encoder reranking, Qdrant, grounded generation, retrieval evaluation |
+| [Autonomous ML Experiment Investigator](./generative-ai/02_autonomous_ml_experiment_investigator/) | Agentic AI / ML Methodology | LangGraph, tool calling, structured planning, human approval, deterministic experiments, critic/replanning, agent evaluation |
 
 ---
 
@@ -181,7 +182,7 @@ The current projects cover:
 
 The generative-AI section focuses on building and evaluating systems around foundation models rather than treating the LLM call as the entire application.
 
-The current project covers:
+The current projects cover:
 
 - PDF ingestion and source metadata;
 - token-aware chunking;
@@ -197,6 +198,13 @@ The current project covers:
 - out-of-corpus abstention;
 - RAG failure analysis;
 - API cost tracking.
+- explicit agent state with LangGraph;
+- constrained tool calling;
+- Pydantic structured planning;
+- human-in-the-loop approval;
+- deterministic experiment execution;
+- bounded critique and replanning;
+- agent-level methodology evaluation;
 
 → [`generative-ai/`](./generative-ai/)
 
@@ -206,7 +214,7 @@ The current project covers:
 
 <div align="center">
 
-`Python` · `NumPy` · `Pandas` · `SciPy` · `scikit-learn` · `PyTorch` · `Optuna` · `LangChain` · `Qdrant` · `FastEmbed` · `OpenAI API` · `Matplotlib` · `Git`
+`Python` · `NumPy` · `Pandas` · `SciPy` · `scikit-learn` · `PyTorch` · `Optuna` · `LangChain` · `LangGraph` · `Qdrant` · `FastEmbed` · `DuckDB` · `OpenAI API` · `Matplotlib` · `Git`
 
 </div>
 
@@ -229,7 +237,8 @@ data-ai-engineering-portfolio/
 │   └── 02_household_energy_rnn_forecasting/
 │
 ├── generative-ai/
-│   └── 01_rag_research_assistant/
+│   ├── 01_rag_research_assistant/
+│   └── 02_autonomous_ml_experiment_investigator/
 │
 └── README.md
 ```
